@@ -2,7 +2,8 @@
 > Deploy website by Webhook methods and connect chatbot tutorial
 
 ## Flask or HTML?
-If your project is based on Flask, you should create a virtual environment and freeze the package and create Procfile
+If your project is based on Flask, you should create a virtual environment and freeze the package for requirements.txt, runtime.txt and create Procfile
+Create requirement.txt:<br>
 ```
 $ pip3 freeze > requirements.txt
 $ vi requirements.txt
@@ -11,12 +12,17 @@ add a row:
 ```
 gunicorn==19.3.0
 ```
+Create Procfile:<br>
 ```
 $ vi Procfile
 ```
 write these in Profile:<br>
 ```
-web: gunicorn wsgi:<Flask App Name, default is app>
+web: gunicorn wsgi:<Flask App Name, default is app> -preload
+```
+Create runtime.txt:<br>
+```
+python-3.6
 ```
 
 ## Deploy by Ngrok
