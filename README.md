@@ -18,7 +18,7 @@ $ vi Procfile
 ```
 write these in Profile:<br>
 ```
-web: gunicorn wsgi:<Flask App Name, default is app> -preload
+web: gunicorn wsgi:<Flask App Name, default is app> --preload
 ```
 <br>Create runtime.txt:<br>
 ```
