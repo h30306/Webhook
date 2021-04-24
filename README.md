@@ -5,10 +5,19 @@
 If your project is based on Flask, you should create a virtual environment and freeze the package and create Procfile
 ```
 $ pip3 freeze > requirements.txt
+$ vi requirements.txt
+```
+add a row:
+```
+gunicorn==19.3.0
+```
+```
 $ vi Procfile
 ```
 write these in Profile:<br>
+```
 web: gunicorn wsgi:app
+```
 
 ## Deploy by Ngrok
 >If you want to deploy by Ngrok, you can follow these steps!
