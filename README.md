@@ -16,7 +16,7 @@ $ vi Procfile
 ```
 write these in Profile:<br>
 ```
-web: gunicorn wsgi:app
+web: gunicorn wsgi:<Flask App Name, default is app>
 ```
 
 ## Deploy by Ngrok
@@ -57,7 +57,14 @@ $ git add .
 $ git commit -m "descriptionn"
 $ git push heroku master
 ```
-
+7. Monitor the status of Heroku
+```
+heroku logs --tail
+```
+8. Monitor the error of Flask
+```
+heroku run app.py –preload
+```
 
 
 
