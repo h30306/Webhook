@@ -69,7 +69,7 @@ heroku logs --tail
 ```
 8. Monitor the error of Flask
 ```
-heroku run app.py –preload
+heroku run python app.py –preload
 ```
 
 
