@@ -60,14 +60,18 @@ $ heroku git:clone -a <project name>
 ```
 $ cd <project name>
 $ git add .
-$ git commit -m "descriptionn"
+$ git commit -m "description"
 $ git push heroku master
 ```
 7. Monitor the status of Heroku
 ```
 heroku logs --tail
 ```
-8. Monitor the error of Flask
+8. Open your Heroku website project
+```
+heroku open
+```
+9. Monitor the error of Flask
 ```
 heroku run python app.py –preload
 ```
