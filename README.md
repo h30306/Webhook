@@ -74,6 +74,7 @@ heroku open
 9. Monitor the error of Flask
 ```
 heroku run python app.py –preload
+heroku run python app.py runserver
 ```
 
 
